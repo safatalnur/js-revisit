@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Revisit: JS-Syntax</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <h1>Javascript Revisit: JS Syntax</h1>
+
+    <p><span>Javascript syntax</span> is the set of rules.</p>
+
+    <p>JavaScript syntax defines two types of values:</p>
+    <p>&#x2192<span> Fixed Values</span> are called <span>Literals</span>. For example, Numbers and Strings</p>
+    <ul>
+      <li>10.50</li>
+      <li>"John doe"</li>
+    </ul>
+
+    <p>&#x2192 <span>Variables</span> are used to store data values.  An equal sign is used to assign values to variables.</p> 
+    <ul>
+      <li>let x;</li>
+      <li>x = 6;</li>
+    </ul>
+
+    <p><span>JavaScript Expressions</span> are a combination of values, variables, and operators, which computes to a value.  the computation is called an evaluation.</p>
+    <p>5 * 10 = <span id="demo1"></span></p>
+    <button onclick="myExpressions1()">Try Me</button>
+
+    <p>x * 50 (Where x = 5) = <span id="demo2"></span></p>
+    <button onclick="myExpressions2()">Try Me</button>
+
+
+    <!-- Next Previous button Section -->
+    <div id="pagination" class="prev-next">
+      <button class="prev-sec" onclick="prevSection()">
+        Previous Section: JS Statement
+      </button>
+      <button class="next-sec" onclick="nextSection()">
+        Next Section: JS Variables
+      </button>
+    </div>
+    <script src="syntax.js"></script>
+  </body>
+</html>
