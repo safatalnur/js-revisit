@@ -7,8 +7,36 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>Revisiting Javascript</h1>
+    <h1>Revisiting Javascript : JS OUTPUT</h1>
 
+    <h2>
+      <span>document.getElementById('id'):</span>Writing into an HTML element
+      using innerHTML
+    </h2>
+    <p id="demo1"></p>
+
+    <h2>
+      <span>document.write():</span>Never write document.write() after an HTML
+      document. It will delete everything
+    </h2>
+    <button onclick="myWrite()">Try Me</button>
+
+    <h2>
+      <span>window.alert():</span>Alert to display on windows document.alert()
+    </h2>
+    <button onclick="myAlert()">Try Me</button>
+
+    <h2><span>console.log():</span>To display on the console</h2>
+    <button onclick="myConsole()">Try Me</button>
+
+    <div id="pagination" class="prev-next">
+      <button class="prev-sec" onclick="prevSection()">
+        Previous Section:
+      </button>
+      <button class="next-sec" onclick="nextSection()">
+        Next Section: JS Statments
+      </button>
+    </div>
     <script src="/app.js"></script>
   </body>
 </html>
