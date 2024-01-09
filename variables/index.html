@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS: Revisit: Variables</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <h1>JavaScript Revisit: JS Variables</h1>
+    <p><span>Variables</span> can be declared in 4 ways</p>
+    <ul>
+      <li>Automatically</li>
+      <li>
+        using <span>var</span>, old version. It has global scope. Use it if you
+        must support old browser
+      </li>
+      <li>
+        using <span>let</span>, it has block scope, must be declared before use
+        and can not be redeclared in the same scope; however, can be reassign.
+        Let does not bind to this and are not hoisted.
+      </li>
+      <li>
+        using <span>const</span>, which have block scope. It cannot be
+        redeclared and Reassigned. It can not be reassign, does not bind to
+        this, and are not hoisted. Special note: you can change the elements of
+        constant array, and change the properties on constant object.
+      </li>
+    </ul>
+
+    <button onclick="myVariables()">
+      Look into the console to see the differences and similarities
+    </button>
+
+    <button onclick="myScope()">
+      See the Differences between Global and Block scope
+    </button>
+
+    <div id="pagination" class="prev-next">
+      <button class="prev-sec" onclick="prevSection()">
+        Previous Section: JS Syntax
+      </button>
+      <button class="next-sec" onclick="nextSection()">
+        Next Section: JS Arithmatic
+      </button>
+    </div>
+    <script src="/variables/variables.js"></script>
+  </body>
+</html>
